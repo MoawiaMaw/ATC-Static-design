@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI kit</title>
+
+    <link rel="stylesheet" href="./css/uikit.min.css" />
+    <link rel="stylesheet" href="./css/uikit-rtl.min.css" />
+    <link rel="stylesheet" href="./angular material/angular-material.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="./jquery.min.js"></script>
+    <script src="./angular.min.js"></script>
+    <script src="./angular material/angular-material.min.js"></script>
+    <script src="./angular material/angular-animate.min.js"></script>
+    <script src="./angular material/angular-aria.min.js"></script>
+    <script src="./angular material/angular-messages.min.js"></script>
+    <script src="./angular material/angular-sanitize.min.js"></script>
+    <script src="./js/uikit.min.js"></script>
+    <script src="./js/uikit-icons.min.js"></script>
+    <script src="./index.js"></script>
+
+</head>
+
+<body>
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;">
+        <nav class=" uk-navbar-container uk-margin uk-navbar-sticky" uk-navbar="mode: click">
+
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li> <a href="#">العربية</a> </li>
+                    <li class="uk-active"> <a href="#"><span uk-icon="icon:home" class="white-text"></span> ATC</a></li>
+                    <li> <a href="index.html">Home</a> </li>
+                    <li> <a href="courses.html">Courses</a> </li>
+                    <li> <a href="#">Workshop</a> </li>
+                    <li> <a href="#">About</a> </li>
+                    <li> <a href="#">Contact</a> </li>
+                </ul>
+            </div>
+
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li><input type="search" name="search" placeholder="       Search" id="navbar-search"></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Join</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+
+
+    <div class="uk-card uk-card-default" id="single-course">
+        <img src="./hero.jpg" alt="">
+        <div class="uk-card-body course-body">
+            <p class="course-price"><span uk-icon="credit-card"></span> 25,000 SDG</p>
+            <div class="uk-grid buttons">
+
+                <button class="btn btn-take"><span uk-icon="icon:play; ratio:0.9"></span> Take</button>
+
+                <button class="btn btn-wish"><span uk-icon="icon:heart; ratio:0.9"></span> wish</button>
+
+            </div>
+
+            <p style="margin-left: 35px;">Include:</p>
+            <div class="uk-grid">
+                <div class="includes-one">
+                    <p><span uk-icon="bookmark"></span> Certificate</p>
+                    <p><span uk-icon="video-camera"></span> Projects</p>
+                </div>
+                <div class="includes-two">
+                    <p><span uk-icon="file-edit"></span> Exams</p>
+                    <p><span uk-icon="clock"></span> Lifetime access</p>
+                </div>
+            </div>
+        </div>
+        <button class="btn-share"><span uk-icon="social"></span></button>
+
+    </div>
+
+    <div class="single-course-first-section">
+
+        <div class="section-container">
+            <div class="course-details">
+                <h1 class="white-text">Full Stack Web and Mobile Developement</h1>
+                <p class="white-text">ج</p>
+                <p class="white-text">
+                    <span>5
+                        <span class="star" uk-icon="star"></span>
+                        <span class="star" uk-icon="star"></span>
+                        <span class="star" uk-icon="star"></span>
+                        <span class="star" uk-icon="star"></span>
+                        <span class="star" uk-icon="star"></span>
+                        - <span uk-icon="users"></span> 63 enrolled
+                    </span>
+                </p>
+                <p class="white-text">Trainer <strong>Abdullah Nouraldaim</strong> - Starts Tuesday 21/9/2021 9:39AM</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="single-course-second-section">
+        <div class="section-container">
+
+            <ul class="single-course-tabs" uk-tab="animation:uk-animation-fade">
+
+                <li><a href="#" class="course-tabs-links">Overview</a></li>
+                <li><a href="#" class="course-tabs-links"> Curriculum</a></li>
+                <li><a href="#" class="course-tabs-links">FAQ</a></li>
+                <li><a href="#" class="course-tabs-links">Reviews</a></li>
+            </ul>
+            <ul class="uk-switcher uk-margin">
+                <li>
+                    <div class="course-details course-tabs-content">
+                        <h3>Course Discribtion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur doloribus ea vitae
+                            eveniet placeat eos sunt optio velit impedit dolore explicabo, tempore nemo nulla excepturi
+                            sequi maiores neque distinctio assumenda quasi. Nesciunt exercitationem doloremque a autem
+                            officia architecto. Ea, quos aut vero laborum labore mollitia cupiditate temporibus harum
+                            incidunt.</p>
+                        <h3>What you will be learning</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur doloribus ea vitae
+                            eveniet placeat eos sunt optio velit impedit dolore explicabo, tempore nemo nulla excepturi
+                            sequi maiores neque distinctio assumenda quasi. Nesciunt exercitationem doloremque a autem
+                            officia architecto. Ea, quos aut vero laborum labore mollitia cupiditate temporibus harum
+                            incidunt.</p>
+                        <h3>Course requirements</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur doloribus ea vitae
+                            eveniet placeat eos sunt optio velit impedit dolore explicabo, tempore nemo nulla excepturi
+                            sequi maiores neque distinctio assumenda quasi. Nesciunt exercitationem doloremque a autem
+                            officia architecto. Ea, quos aut vero laborum labore mollitia cupiditate temporibus harum
+                            incidunt.</p>
+                        <h3>Course content</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur doloribus ea vitae
+                            eveniet placeat eos sunt optio velit impedit dolore explicabo, tempore nemo nulla excepturi
+                            sequi maiores neque distinctio assumenda quasi. Nesciunt exercitationem doloremque a autem
+                            officia architecto. Ea, quos aut vero laborum labore mollitia cupiditate temporibus harum
+                            incidunt.</p>
+                        <hr>
+                        <h3>Meet course instructor</h3>
+                        <div class="uk-card uk-grid-collapse uk-margin instructor-card " uk-grid>
+                            <div class="uk-card-media-left uk-width-1-4">
+                                <img src="./hero.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body uk-width-expand no-padding">
+                                <p><strong>Abdullah Nouraldaim</strong></p>
+                                <p>Main instructor</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="course-details course-tabs-content">
+                        <h3>Course Discribtion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur doloribus ea vitae
+                            eveniet placeat eos sunt optio velit impedit dolore explicabo, tempore nemo nulla excepturi
+                            sequi maiores neque distinctio assumenda quasi. Nesciunt exercitationem doloremque a autem
+                            officia architecto. Ea, quos aut vero laborum labore mollitia cupiditate temporibus harum
+                            incidunt.</p>
+                        <h3>What you will be learning</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur doloribus ea vitae
+                            eveniet placeat eos sunt optio velit impedit dolore explicabo, tempore nemo nulla excepturi
+                            sequi maiores neque distinctio assumenda quasi. Nesciunt exercitationem doloremque a autem
+                            officia architecto. Ea, quos aut vero laborum labore mollitia cupiditate temporibus harum
+                            incidunt.</p>
+                        <h3>Course requirements</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur doloribus ea vitae
+                            eveniet placeat eos sunt optio velit impedit dolore explicabo, tempore nemo nulla excepturi
+                            sequi maiores neque distinctio assumenda quasi. Nesciunt exercitationem doloremque a autem
+                            officia architecto. Ea, quos aut vero laborum labore mollitia cupiditate temporibus harum
+                            incidunt.</p>
+                        <h3>Course content</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur doloribus ea vitae
+                            eveniet placeat eos sunt optio velit impedit dolore explicabo, tempore nemo nulla excepturi
+                            sequi maiores neque distinctio assumenda quasi. Nesciunt exercitationem doloremque a autem
+                            officia architecto. Ea, quos aut vero laborum labore mollitia cupiditate temporibus harum
+                            incidunt.</p>
+                        <hr>
+                        <h3>Meet course instructor</h3>
+                        <div class="uk-card uk-grid-collapse uk-margin instructor-card " uk-grid>
+                            <div class="uk-card-media-left uk-width-1-4">
+                                <img src="./hero.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body uk-width-expand no-padding">
+                                <p><strong>Abdullah Nouraldaim</strong></p>
+                                <p>Main instructor</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="course-details course-tabs-content">
+                        <h3>Course Discribtion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur doloribus ea vitae
+                            eveniet placeat eos sunt optio velit impedit dolore explicabo, tempore nemo nulla excepturi
+                            sequi maiores neque distinctio assumenda quasi. Nesciunt exercitationem doloremque a autem
+                            officia architecto. Ea, quos aut vero laborum labore mollitia cupiditate temporibus harum
+                            incidunt.</p>
+                        <h3>What you will be learning</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur doloribus ea vitae
+                            eveniet placeat eos sunt optio velit impedit dolore explicabo, tempore nemo nulla excepturi
+                            sequi maiores neque distinctio assumenda quasi. Nesciunt exercitationem doloremque a autem
+                            officia architecto. Ea, quos aut vero laborum labore mollitia cupiditate temporibus harum
+                            incidunt.</p>
+                        <h3>Course requirements</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur doloribus ea vitae
+                            eveniet placeat eos sunt optio velit impedit dolore explicabo, tempore nemo nulla excepturi
+                            sequi maiores neque distinctio assumenda quasi. Nesciunt exercitationem doloremque a autem
+                            officia architecto. Ea, quos aut vero laborum labore mollitia cupiditate temporibus harum
+                            incidunt.</p>
+                        <h3>Course content</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur doloribus ea vitae
+                            eveniet placeat eos sunt optio velit impedit dolore explicabo, tempore nemo nulla excepturi
+                            sequi maiores neque distinctio assumenda quasi. Nesciunt exercitationem doloremque a autem
+                            officia architecto. Ea, quos aut vero laborum labore mollitia cupiditate temporibus harum
+                            incidunt.</p>
+                        <hr>
+                        <h3>Meet course instructor</h3>
+                        <div class="uk-card uk-grid-collapse uk-margin instructor-card " uk-grid>
+                            <div class="uk-card-media-left uk-width-1-4">
+                                <img src="./hero.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body uk-width-expand no-padding">
+                                <p><strong>Abdullah Nouraldaim</strong></p>
+                                <p>Main instructor</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="course-details course-tabs-content">
+                        <h3>Course Discribtion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur doloribus ea vitae
+                            eveniet placeat eos sunt optio velit impedit dolore explicabo, tempore nemo nulla excepturi
+                            sequi maiores neque distinctio assumenda quasi. Nesciunt exercitationem doloremque a autem
+                            officia architecto. Ea, quos aut vero laborum labore mollitia cupiditate temporibus harum
+                            incidunt.</p>
+                        <h3>What you will be learning</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur doloribus ea vitae
+                            eveniet placeat eos sunt optio velit impedit dolore explicabo, tempore nemo nulla excepturi
+                            sequi maiores neque distinctio assumenda quasi. Nesciunt exercitationem doloremque a autem
+                            officia architecto. Ea, quos aut vero laborum labore mollitia cupiditate temporibus harum
+                            incidunt.</p>
+                        <h3>Course requirements</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur doloribus ea vitae
+                            eveniet placeat eos sunt optio velit impedit dolore explicabo, tempore nemo nulla excepturi
+                            sequi maiores neque distinctio assumenda quasi. Nesciunt exercitationem doloremque a autem
+                            officia architecto. Ea, quos aut vero laborum labore mollitia cupiditate temporibus harum
+                            incidunt.</p>
+                        <h3>Course content</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur doloribus ea vitae
+                            eveniet placeat eos sunt optio velit impedit dolore explicabo, tempore nemo nulla excepturi
+                            sequi maiores neque distinctio assumenda quasi. Nesciunt exercitationem doloremque a autem
+                            officia architecto. Ea, quos aut vero laborum labore mollitia cupiditate temporibus harum
+                            incidunt.</p>
+                        <hr>
+                        <h3>Meet course instructor</h3>
+                        <div class="uk-card uk-grid-collapse uk-margin instructor-card " uk-grid>
+                            <div class="uk-card-media-left uk-width-1-4">
+                                <img src="./hero.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body uk-width-expand no-padding">
+                                <p><strong>Abdullah Nouraldaim</strong></p>
+                                <p>Main instructor</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- fixed in all pages -->
+
+    <button class="bottom-button chat-button">Chat</button>
+    <button class="bottom-button up-button"><span uk-icon="icon: chevron-up"></span></button>
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="uk-grid footer-grid">
+                <div class="uk-width-expand@m" style="padding: 0 !important;">
+                    <h3><span uk-icon="icon:code"></span>Afro-tech Training Center</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, officia temporibus quod
+                        alias hic sit, impedit excepturi illum laudantium enim, quasi perspiciatis minima
+                        cupiditate
+                        quos numquam non. Obcaecati, officia culpa? Assumenda adipisci aspernatur eaque
+                        voluptates
+                        exercitationem sit eveniet. Cumque, quod quis eum neque voluptate sequi quia. Ut, odit
+                        eligendi! Quis.</p>
+                </div>
+
+                <div class="uk-width-1-6">
+                    <h3>Explore</h3>
+                    <a class="footer-link" href="">link1</a>
+                    <a class="footer-link" href="">link2</a>
+                    <a class="footer-link" href="">link3</a>
+                    <a class="footer-link" href="">link4</a>
+                </div>
+                <div class="uk-width-1-6" style="padding: 0 !important;">
+                    <h3>Acoounts</h3>
+                    <a class="footer-link" href="">link1</a>
+                    <a class="footer-link" href="">link2</a>
+                    <a class="footer-link" href="">link3</a>
+                </div>
+                <div class="uk-width-1-6" style="padding: 0 !important;">
+                    <h3>Resources</h3>
+                    <a class="footer-link" href="">link1</a>
+                    <a class="footer-link" href="">link2</a>
+                    <a class="footer-link" href="">link3</a>
+                </div>
+
+            </div>
+
+            <p style="width: 100%;">
+                <span>&copy;</span> 2021 <b>ATC</b> All Rights Reserved
+                <span class="footer-icons" style="float: right; padding-right: 0 !important;">
+                    <a href="">
+                        <span uk-icon="icon:facebook"></span>
+                    </a>
+                    <a href="">
+                        <span uk-icon="icon:dribbble"></span>
+                    </a>
+                    <a href="">
+                        <span uk-icon="icon:youtube"></span>
+                    </a>
+                    <a href="">
+                        <span uk-icon="icon:twitter"></span>
+                    </a>
+                </span>
+            </p>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

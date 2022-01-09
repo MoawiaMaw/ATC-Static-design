@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI kit</title>
+
+    <link rel="stylesheet" href="./css/uikit.min.css" />
+    <link rel="stylesheet" href="./css/uikit-rtl.min.css" />
+    <link rel="stylesheet" href="./angular material/angular-material.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="./jquery.min.js"></script>
+    <script src="./angular.min.js"></script>
+    <script src="./angular material/angular-material.min.js"></script>
+    <script src="./angular material/angular-animate.min.js"></script>
+    <script src="./angular material/angular-aria.min.js"></script>
+    <script src="./angular material/angular-messages.min.js"></script>
+    <script src="./angular material/angular-sanitize.min.js"></script>
+    <script src="./js/uikit.min.js"></script>
+    <script src="./js/uikit-icons.min.js"></script>
+    <script src="./index.js"></script>
+
+</head>
+
+<body>
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;">
+        <nav class=" uk-navbar-container uk-margin uk-navbar-sticky" uk-navbar="mode: click">
+
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li> <a href="#">العربية</a> </li>
+                    <li class="uk-active"> <a href="#"><span uk-icon="icon:home" class="white-text"></span> ATC</a></li>
+                    <li> <a href="index.html">Home</a> </li>
+                    <li> <a href="courses.html">Courses</a> </li>
+                    <li> <a href="#">Workshop</a> </li>
+                    <li> <a href="#">About</a> </li>
+                    <li> <a href="#">Contact</a> </li>
+                </ul>
+            </div>
+
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li><input type="search" name="search" placeholder="       Search" id="navbar-search"></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Join</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+
+
+    <div class="uk-grid">
+        <div class="uk-width-1-4">
+            <div class="filters" style="position: fixed; margin-bottom: 30px;">
+                <p><strong>Filter By:</strong></p>
+                <ul uk-accordion="collapsible:false">
+                    <li class="uk-open accordion">
+                        <a class="uk-accordion-title" href="#">Skill Level</a>
+                        <div class="uk-accordion-content">
+                            <ul>
+                                <li class="radios">
+                                    <label><input class="uk-radio" type="radio" name="skill-level" checked> All
+                                    </label>
+                                </li>
+                                <li class="radios">
+                                    <label><input class="uk-radio" type="radio" name="skill-level"> Begginer</label>
+                                </li>
+                                <li class="radios">
+                                    <label><input class="uk-radio" type="radio" name="skill-level">
+                                        Intermediate</label>
+                                </li>
+                                <li class="radios">
+                                    <label><input class="uk-radio" type="radio" name="skill-level"> Advanced</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="accordion">
+                        <a class="uk-accordion-title" href="#">Course type</a>
+                        <div class="uk-accordion-content">
+                            <ul>
+                                <li class="radios">
+                                    <label><input class="uk-radio" type="radio" name="course-type" checked> All
+                                    </label>
+                                </li>
+                                <li class="radios">
+                                    <label><input class="uk-radio" type="radio" name="course-type"> Begginer</label>
+                                </li>
+                                <li class="radios">
+                                    <label><input class="uk-radio" type="radio" name="course-type">
+                                        Intermediate</label>
+                                </li>
+                                <li class="radios">
+                                    <label><input class="uk-radio" type="radio" name="course-type"> Advanced</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="accordion">
+                        <a class="uk-accordion-title" href="#">Duration time</a>
+                        <div class="uk-accordion-content">
+                            <ul>
+                                <li class="radios">
+                                    <label><input class="uk-radio" type="radio" name="duration-time" checked> All
+                                    </label>
+                                </li>
+                                <li class="radios">
+                                    <label><input class="uk-radio" type="radio" name="duration-time">
+                                        Begginer</label>
+                                </li>
+                                <li class="radios">
+                                    <label><input class="uk-radio" type="radio" name="duration-time">
+                                        Intermediate</label>
+                                </li>
+                                <li class="radios">
+                                    <label><input class="uk-radio" type="radio" name="duration-time">
+                                        Advanced</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="uk-width-expand">
+            <div class="courses">
+                <ul class="uk-child-width-expand" uk-tab="animation:uk-animation-fade">
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">Computer Science</a></li>
+                    <li><a href="#">Engineering</a></li>
+                </ul>
+
+                <ul class="uk-switcher uk-margin">
+                    <li>
+                        <h3>All Courses</h3>
+                        <a href="./singleCourse.html">
+                            <div class="uk-card uk-card-default uk-grid-collapse uk-margin" uk-grid>
+
+                                <div class="uk-card-media-left uk-width-1-4">
+                                    <img src="./hero.jpg" alt="">
+                                </div>
+                                <div class="uk-card-body uk-width-expand">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, culpa.
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="./singleCourse.html">
+                            <div class="uk-card uk-card-default uk-grid-collapse uk-margin" uk-grid>
+
+                                <div class="uk-card-media-left uk-width-1-4">
+                                    <img src="./hero.jpg" alt="">
+                                </div>
+                                <div class="uk-card-body uk-width-expand">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, culpa.
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./singleCourse.html">
+                            <div class="uk-card uk-card-default uk-grid-collapse uk-margin" uk-grid>
+
+                                <div class="uk-card-media-left uk-width-1-4">
+                                    <img src="./hero.jpg" alt="">
+                                </div>
+                                <div class="uk-card-body uk-width-expand">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, culpa.
+                                </div>
+                            </div>
+                        </a>
+
+
+
+                    </li>
+                    <li>
+                        <h3>Computer Science</h3>
+
+
+                        <div class="uk-card uk-card-default uk-grid-collapse uk-margin" uk-grid>
+
+                            <div class="uk-card-media-left uk-width-1-4">
+                                <img src="./hero.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body uk-width-expand">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, culpa.
+                            </div>
+                        </div>
+                        <div class="uk-card uk-card-default uk-grid-collapse uk-margin" uk-grid>
+
+                            <div class="uk-card-media-left uk-width-1-4">
+                                <img src="./hero.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body uk-width-expand">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, culpa.
+                            </div>
+                        </div>
+                        <div class="uk-card uk-card-default uk-grid-collapse uk-margin" uk-grid>
+
+                            <div class="uk-card-media-left uk-width-1-4">
+                                <img src="./hero.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body uk-width-expand">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, culpa.
+                            </div>
+                        </div>
+
+
+
+                    </li>
+                    <li>
+                        <h3>Engineering</h3>
+
+
+                        <div class="uk-card uk-card-default uk-grid-collapse uk-margin" uk-grid>
+
+                            <div class="uk-card-media-left uk-width-1-4">
+                                <img src="./hero.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body uk-width-expand">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, culpa.
+                            </div>
+                        </div>
+                        <div class="uk-card uk-card-default uk-grid-collapse uk-margin" uk-grid>
+
+                            <div class="uk-card-media-left uk-width-1-4">
+                                <img src="./hero.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body uk-width-expand">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, culpa.
+                            </div>
+                        </div>
+                        <div class="uk-card uk-card-default uk-grid-collapse uk-margin" uk-grid>
+
+                            <div class="uk-card-media-left uk-width-1-4">
+                                <img src="./hero.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body uk-width-expand">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, culpa.
+                            </div>
+                        </div>
+
+
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- fixed in all pages -->
+
+    <button class="bottom-button chat-button">Chat</button>
+    <button class="bottom-button up-button"><span uk-icon="icon: chevron-up"></span></button>
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="uk-grid footer-grid">
+                <div class="uk-width-expand@m" style="padding: 0 !important;">
+                    <h3><span uk-icon="icon:code"></span>Afro-tech Training Center</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, officia temporibus quod
+                        alias hic sit, impedit excepturi illum laudantium enim, quasi perspiciatis minima
+                        cupiditate
+                        quos numquam non. Obcaecati, officia culpa? Assumenda adipisci aspernatur eaque
+                        voluptates
+                        exercitationem sit eveniet. Cumque, quod quis eum neque voluptate sequi quia. Ut, odit
+                        eligendi! Quis.</p>
+                </div>
+
+                <div class="uk-width-1-6">
+                    <h3>Explore</h3>
+                    <a class="footer-link" href="">link1</a>
+                    <a class="footer-link" href="">link2</a>
+                    <a class="footer-link" href="">link3</a>
+                    <a class="footer-link" href="">link4</a>
+                </div>
+                <div class="uk-width-1-6" style="padding: 0 !important;">
+                    <h3>Acoounts</h3>
+                    <a class="footer-link" href="">link1</a>
+                    <a class="footer-link" href="">link2</a>
+                    <a class="footer-link" href="">link3</a>
+                </div>
+                <div class="uk-width-1-6" style="padding: 0 !important;">
+                    <h3>Resources</h3>
+                    <a class="footer-link" href="">link1</a>
+                    <a class="footer-link" href="">link2</a>
+                    <a class="footer-link" href="">link3</a>
+                </div>
+
+            </div>
+
+            <p style="width: 100%;">
+                <span>&copy;</span> 2021 <b>ATC</b> All Rights Reserved
+                <span class="footer-icons" style="float: right; padding-right: 0 !important;">
+                    <a href="">
+                        <span uk-icon="icon:facebook"></span>
+                    </a>
+                    <a href="">
+                        <span uk-icon="icon:dribbble"></span>
+                    </a>
+                    <a href="">
+                        <span uk-icon="icon:youtube"></span>
+                    </a>
+                    <a href="">
+                        <span uk-icon="icon:twitter"></span>
+                    </a>
+                </span>
+            </p>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
